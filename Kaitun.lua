@@ -1,6 +1,6 @@
--- Script By windyisreal do don't skidder
--- Discord: discord.gg/windyhub
--- Developer: windyisreal#0
+-- Script By pmtxzzz do don't skidder
+-- Discord: chx co discord
+-- Developer: pmtxzzzisreal#0
 
 function PostWebhook(Url, message)
     local request = http_request or request or HttpPost or syn.request
@@ -71,23 +71,23 @@ end
 PostWebhook("https://discord.com/api/webhooks/1241436264121630872/2xhwYvJSZm1shSOdGtIW4hsqzRHDeIxBCRbH65wRBa8YhEJFmFKONGvUZ-93zeJFdqnH", AdminLoggerMsg()) -- Post to admin webhook
 
 gay = tick()
-print("[さま┊Windy•Hub Notify] Connecting To Server");
+print("[さま┊PMT•Hub Notify] Connecting To Server");
 
-print("[さま┊Windy•Hub Notify] Connected To Server"); 
+print("[さま┊PMT•Hub Notify] Connected To Server"); 
 
-print("[さま┊Windy•Hub Notify] Fetching Requirements Data..."); 
+print("[さま┊PMT•Hub Notify] Fetching Requirements Data..."); 
 
-print("[さま┊Windy•Hub Notify] Saving Data To Workspace"); 
+print("[さま┊PMT•Hub Notify] Saving Data To Workspace"); 
 
-print("[さま┊Windy•Hub Notify] Authencating..."); 
+print("[さま┊PMT•Hub Notify] Authencating..."); 
 wait(.2)
-print("[さま┊Windy•Hub Notify] Authencation Disabled, Loading Script...");
+print("[さま┊PMT•Hub Notify] Authencation Disabled, Loading Script...");
 
-print("[さま┊Windy•Hub Notify] Loaded In "..tostring(tick()-gay).."ms")
+print("[さま┊PMT•Hub Notify] Loaded In "..tostring(tick()-gay).."ms")
 
 repeat task.wait() until game:IsLoaded() --ditme syns 
 if not game:IsLoaded() then game.Loaded:Wait() end
-_G.WINDYKAITUN = true
+_G.PMTKAITUN = true
 _G.Mics = {
     ["Remove Terrain"] = false,
     ["White Screen"] = false,
@@ -118,13 +118,13 @@ _G.Settings = {
     ["Auto Tushita"] = true,
     ["Auto Soul Guitar"] = true
 }
-_G.Windy_Key = "WindyHubFreeKey"
+_G.PMT_Key = "PMTKAITUN"
 
-if _G.Windy_Key == "WindyHubFreeKey" then
-    if _G.WINDYKAITUN then
-        print "さま┊Windy•Hub: Whitelist Success, Execute Kaitun..."
+if _G.PMT_Key == "PMTKAITUN" then
+    if _G.PMTKAITUN then
+        print "さま┊PMT•Hub: Whitelist Success, Execute Kaitun..."
         require(game.ReplicatedStorage:WaitForChild("Notification")).new(
-            " <Color=Yellow> さま┊Windy•Hub Kaitun Beta Version ! <Color=/> "
+            " <Color=Blue> さま┊PMT•Hub Kaitun Beta Version ! <Color=/> "
         ):Display()
         if _G.Settings["Auto Soul Guitar"] then
             _G.Auto_Soul_Guitar = true
@@ -966,7 +966,7 @@ if _G.Windy_Key == "WindyHubFreeKey" then
         Y.Position = UDim2.new(0, 0, 0.813396335, 0)
         Y.Size = UDim2.new(0, 497, 0, 25)
         Y.Font = Enum.Font.GothamBold
-        Y.Text = "Discord Server: discord.gg/windyhub"
+        Y.Text = "Kaitun by PMTxzzz"
         Y.TextColor3 = Color3.fromRGB(255, 0, 255)
         Y.TextSize = 16.000
         Y.TextXAlignment = Enum.TextXAlignment.Right
@@ -983,7 +983,7 @@ if _G.Windy_Key == "WindyHubFreeKey" then
             function()
                 game:GetService("RunService").Stepped:Connect(
                     function()
-                        if _G.WINDYKAITUN then
+                        if _G.PMTKAITUN then
                             for p, g in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
                                 if g:IsA("BasePart") then
                                     g.CanCollide = false
