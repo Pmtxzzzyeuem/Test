@@ -956,7 +956,7 @@ if _G.PMT_Key == "PMTKAITUN" then
         X.BorderSizePixel = 0
         X.Position = UDim2.new(0.438095242, 0, -0.321739137, 0)
         X.Size = UDim2.new(0, 75, 0, 75)
-        X.Image = "rbxassetid://17510500831"
+        X.Image = "rbxassetid://17773184923"
         Y.Name = "Server"
         Y.Parent = P
         Y.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
