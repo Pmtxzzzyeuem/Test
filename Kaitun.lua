@@ -325,7 +325,7 @@ if _G.PMT_Key == "PMTKAITUN" then
                     -0.831178129
                 )
                 if
-                    _G.WINDYKAITUN and
+                    _G.PMTKAITUN and
                         (NPCPosition.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude >
                             3000
                  then
@@ -425,7 +425,7 @@ if _G.PMT_Key == "PMTKAITUN" then
                     -0.922134459
                 )
                 if
-                    _G.WINDYKAITUN and
+                    _G.PMTKAITUN and
                         (NPCPosition.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude >
                             3000
                  then
@@ -967,7 +967,7 @@ if _G.PMT_Key == "PMTKAITUN" then
         Y.Size = UDim2.new(0, 497, 0, 25)
         Y.Font = Enum.Font.GothamBold
         Y.Text = "Kaitun by PMTxzzz"
-        Y.TextColor3 = Color3.fromRGB(255, 0, 255)
+        Y.TextColor3 = Color3.fromRGB(220, 20, 60)
         Y.TextSize = 16.000
         Y.TextXAlignment = Enum.TextXAlignment.Right
         local function Z()
@@ -1002,7 +1002,7 @@ if _G.PMT_Key == "PMTKAITUN" then
                 while task.wait() do
                     pcall(
                         function()
-                            if _G.WINDYKAITUN then
+                            if _G.PMTKAITUN then
                                 if
                                     not game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:FindFirstChild(
                                         "BodyClip"
@@ -1042,7 +1042,7 @@ if _G.PMT_Key == "PMTKAITUN" then
                 pcall(
                     function()
                         while wait() do
-                            if _G.WINDYKAITUN and _G.Grab_Fruit then
+                            if _G.PMTKAITUN and _G.Grab_Fruit then
                                 for f, g in pairs(game:GetService("Workspace"):GetChildren()) do
                                     if string.find(g.Name, "Fruit") then
                                         if g:IsA("Tool") then
@@ -1059,20 +1059,20 @@ if _G.PMT_Key == "PMTKAITUN" then
                                                     Bypass(g.Handle.CFrame * CFrame.new(0, 50, 0))
                                                 until (g.Handle.CFrame.Position -
                                                     game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <=
-                                                    _G.Mics["Max-Distance Bypass TP"] or not _G.WINDYKAITUN
+                                                    _G.Mics["Max-Distance Bypass TP"] or not _G.PMTKAITUN
                                                 repeat
                                                     wait()
                                                     toposition(g.Handle.CFrame)
                                                 until (g.Handle.CFrame.Position -
                                                     game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <=
-                                                    _G.Mics["Max-Distance Bypass TP"] or not _G.WINDYKAITUN
+                                                    _G.Mics["Max-Distance Bypass TP"] or not _G.PMTKAITUN
                                             else
                                                 repeat
                                                     wait()
                                                     toposition(g.Handle.CFrame)
                                                 until (g.Handle.CFrame.Position -
                                                     game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <=
-                                                    1 or not _G.WINDYKAITUN
+                                                    1 or not _G.PMTKAITUN
                                             end
                                             toposition(g.Handle.CFrame)
                                             firetouchinterest(
@@ -1270,7 +1270,7 @@ if _G.PMT_Key == "PMTKAITUN" then
         spawn(
             function()
                 while wait() do
-                    if _G.WINDYKAITUN then
+                    if _G.PMTKAITUN then
                         MyLevel = game.Players.localPlayer.Data.Level.value
                         if MyLevel >= 1 then
                             V.Text = "Status: Redeem Code"
@@ -1692,7 +1692,7 @@ if _G.PMT_Key == "PMTKAITUN" then
         spawn(
             function()
                 while wait(30) do
-                    if _G.WINDYKAITUN and _G.StoreFruit and _G.Auto_Dungeon_Superhuman == nil then
+                    if _G.PMTKAITUN and _G.StoreFruit and _G.Auto_Dungeon_Superhuman == nil then
                         _G.DitFruits = true
                         dithetae()
                     end
@@ -1703,7 +1703,7 @@ if _G.PMT_Key == "PMTKAITUN" then
             function()
                 while wait() do
                     local MyLevel = game.Players.localPlayer.Data.Level.value
-                    if _G.WINDYKAITUN and _G.Midnight_Blade then
+                    if _G.PMTKAITUN and _G.Midnight_Blade then
                         pcall(
                             function()
                                 if MyLevel >= 1349 and Check_Sword("Midnight Blade") == nil then
@@ -1731,7 +1731,7 @@ if _G.PMT_Key == "PMTKAITUN" then
                                                     Bypass(CFrame.new(911.35827636719, 125.95812988281, 33159.5390625))
                                                 until (CFrame.new(911.35827636719, 125.95812988281, 33159.5390625).Position -
                                                     game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <=
-                                                    _G.Mics["Max-Distance Bypass TP"] or not _G.WINDYKAITUN
+                                                    _G.Mics["Max-Distance Bypass TP"] or not _G.PMTKAITUN
                                             end
                                             for f, g in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
                                                 if string.find(g.Name, "Ship") then
@@ -1783,7 +1783,7 @@ if _G.PMT_Key == "PMTKAITUN" then
                                                     Bypass(CFrame.new(911.35827636719, 125.95812988281, 33159.5390625))
                                                 until (CFrame.new(911.35827636719, 125.95812988281, 33159.5390625).Position -
                                                     game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <=
-                                                    1 or not _G.WINDYKAITUN
+                                                    1 or not _G.PMTKAITUN
                                             else
                                                 repeat
                                                     wait()
@@ -1792,7 +1792,7 @@ if _G.PMT_Key == "PMTKAITUN" then
                                                     )
                                                 until (CFrame.new(911.35827636719, 125.95812988281, 33159.5390625).Position -
                                                     game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <=
-                                                    1 or not _G.WINDYKAITUN
+                                                    1 or not _G.PMTKAITUN
                                             end
                                         end
                                     elseif
@@ -1848,7 +1848,7 @@ if _G.PMT_Key == "PMTKAITUN" then
         spawn(
             function()
                 while wait() do
-                    if _G.WINDYKAITUN and game.Players.LocalPlayer:FindFirstChild("WeaponAssetCache") then
+                    if _G.PMTKAITUN and game.Players.LocalPlayer:FindFirstChild("WeaponAssetCache") then
                         pcall(
                             function()
                                 if
@@ -2011,7 +2011,7 @@ if _G.PMT_Key == "PMTKAITUN" then
         spawn(
             function()
                 while wait() do
-                    if _G.WINDYKAITUN and _G.Auto_Dungeon_Superhuman and _G.StartFarm == false then
+                    if _G.PMTKAITUN and _G.Auto_Dungeon_Superhuman and _G.StartFarm == false then
                         for f, g in pairs(game.Workspace.Enemies:GetDescendants()) do
                             if
                                 g:FindFirstChild("Humanoid") and g:FindFirstChild("HumanoidRootPart") and
@@ -2040,7 +2040,7 @@ if _G.PMT_Key == "PMTKAITUN" then
             function()
                 while wait() do
                     local h = game:GetService("Players").LocalPlayer.Data.Level.Value
-                    if _G.WINDYKAITUN and _G.Start_Saber and Check_Sword("Saber") == nil and h >= 250 and h <= 300 then
+                    if _G.PMTKAITUN and _G.Start_Saber and Check_Sword("Saber") == nil and h >= 250 and h <= 300 then
                         pcall(
                             function()
                                 T.Text = "Auto Saber and Auto Pole maybe doesn't work"
@@ -2347,7 +2347,7 @@ if _G.PMT_Key == "PMTKAITUN" then
                                                         )
                                                     end
                                                 elseif
-                                                    _G.WINDYKAITUN and _G.Start_Saber and Check_Sword("Saber") == true and
+                                                    _G.PMTKAITUN and _G.Start_Saber and Check_Sword("Saber") == true and
                                                         h <= 700
                                                  then
                                                     _G.StartFarm = true
@@ -2369,7 +2369,7 @@ if _G.PMT_Key == "PMTKAITUN" then
         spawn(
             function()
                 while wait() do
-                    if _G.WINDYKAITUN and _G.Auto_Dungeon_Superhuman and _G.StartFarm == false then
+                    if _G.PMTKAITUN and _G.Auto_Dungeon_Superhuman and _G.StartFarm == false then
                         for f, g in pairs(game.Workspace.Enemies:GetDescendants()) do
                             if
                                 g:FindFirstChild("Humanoid") and g:FindFirstChild("HumanoidRootPart") and
@@ -2398,7 +2398,7 @@ if _G.PMT_Key == "PMTKAITUN" then
         spawn(
             function()
                 while wait() do
-                    if _G.WINDYKAITUN and _G.Auto_Dungeon_Superhuman and _G.StartFarm == false then
+                    if _G.PMTKAITUN and _G.Auto_Dungeon_Superhuman and _G.StartFarm == false then
                         if not game.Players.LocalPlayer.PlayerGui.Main.Timer.Visible == false then
                             T.Text = "Auto Raid"
                             if game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 5") then
@@ -2436,7 +2436,7 @@ if _G.PMT_Key == "PMTKAITUN" then
         spawn(
             function()
                 while wait(2) do
-                    if _G.WINDYKAITUN and _G.Auto_Dungeon_Superhuman and _G.JoinD then
+                    if _G.PMTKAITUN and _G.Auto_Dungeon_Superhuman and _G.JoinD then
                         if game:GetService("Players")["LocalPlayer"].PlayerGui.Main.Timer.Visible == false then
                             if W2 then
                                 fireclickdetector(
@@ -2457,7 +2457,7 @@ if _G.PMT_Key == "PMTKAITUN" then
                 while wait() do
                     pcall(
                         function()
-                            if _G.WINDYKAITUN and _G.Auto_Dungeon_Superhuman then
+                            if _G.PMTKAITUN and _G.Auto_Dungeon_Superhuman then
                                 if game:GetService("Players")["LocalPlayer"].PlayerGui.Main.Timer.Visible == false then
                                     local a3 = game:GetService("Players")["Localplayer"].Data.Fragments.Value
                                     if a3 >= 1499 then
@@ -2513,7 +2513,7 @@ if _G.PMT_Key == "PMTKAITUN" then
                 while wait() do
                     pcall(
                         function()
-                            if _G.WINDYKAITUN and _G.Auto_Dungeon_Superhuman then
+                            if _G.PMTKAITUN and _G.Auto_Dungeon_Superhuman then
                                 _G.Grab_Fruit = false
                                 for f, g in pairs(FruitList) do
                                     if
@@ -2557,14 +2557,14 @@ if _G.PMT_Key == "PMTKAITUN" then
                                                                         toposition(g.Handle.CFrame)
                                                                     until (g.Handle.CFrame.Position -
                                                                         game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <=
-                                                                        20 or not _G.WINDYKAITUN
+                                                                        20 or not _G.PMTKAITUN
                                                                 else
                                                                     repeat
                                                                         wait()
                                                                         toposition(g.Handle.CFrame)
                                                                     until (g.Handle.CFrame.Position -
                                                                         game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <=
-                                                                        20 or not _G.WINDYKAITUN
+                                                                        20 or not _G.PMTKAITUN
                                                                 end
                                                             end
                                                         end
@@ -2607,7 +2607,7 @@ if _G.PMT_Key == "PMTKAITUN" then
                     pcall(
                         function()
                             if
-                                _G.WINDYKAITUN and W2 and _G.Open_Flamingo_Access and
+                                _G.PMTKAITUN and W2 and _G.Open_Flamingo_Access and
                                     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("GetUnlockables").FlamingoAccess ==
                                         nil and
                                     game.Players.LocalPlayer.Data.Level.Value >= 1135
@@ -2634,7 +2634,7 @@ if _G.PMT_Key == "PMTKAITUN" then
                                                         toposition(g.Handle.CFrame)
                                                     until (g.Handle.CFrame.Position -
                                                         game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <=
-                                                        20 or not _G.WINDYKAITUN
+                                                        20 or not _G.PMTKAITUN
                                                 end
                                             end
                                         end
@@ -2695,7 +2695,7 @@ if _G.PMT_Key == "PMTKAITUN" then
                     local a7 = game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest
                     pcall(
                         function()
-                            if _G.WINDYKAITUN and _G.StartFarm then
+                            if _G.PMTKAITUN and _G.StartFarm then
                                 if _G.FastFarm and (MyLevel >= 15 and MyLevel <= 300) then
                                     if MyLevel >= 15 and MyLevel <= 300 then
                                         dithetmob()
@@ -2839,12 +2839,12 @@ if _G.PMT_Key == "PMTKAITUN" then
                                         g.HumanoidRootPart.Size = Vector3.new(60, 60, 60)
                                         g.HumanoidRootPart.Transparency = 1
                                         toposition(g.HumanoidRootPart.CFrame * CFrame.new(1, 30, 10))
-                                    until not g.Parent or not _G.WINDYKAITUN or g.Humanoid.Health < 0
+                                    until not g.Parent or not _G.PMTKAITUN or g.Humanoid.Health < 0
                                 end
                             else
                                 BringMobFarm55 = false
                                 if
-                                    _G.WINDYKAITUN and
+                                    _G.PMTKAITUN and
                                         (CFrameMon.Position -
                                             game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude >
                                             _G.Mics["Max-Distance Bypass TP"]
@@ -2961,7 +2961,7 @@ if _G.PMT_Key == "PMTKAITUN" then
         spawn(
             function()
                 while wait() do
-                    if _G.WINDYKAITUN then
+                    if _G.PMTKAITUN then
                         if not game.Players.LocalPlayer.Character:FindFirstChild("HasBuso") then
                             game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Buso")
                         end
@@ -2977,10 +2977,10 @@ if _G.PMT_Key == "PMTKAITUN" then
         spawn(
             function()
                 while wait() do
-                    if _G.WINDYKAITUN then
+                    if _G.PMTKAITUN then
                         pcall(
                             function()
-                                StopTween(_G.WINDYKAITUN)
+                                StopTween(_G.PMTKAITUN)
                                 require(game.ReplicatedStorage.Util.CameraShaker):Stop()
                             end
                         )
@@ -3003,7 +3003,7 @@ if _G.PMT_Key == "PMTKAITUN" then
             function()
                 while wait() do
                     if
-                        _G.WINDYKAITUN and game.Players.LocalPlayer.Data.Level.Value >= 350 and
+                        _G.PMTKAITUN and game.Players.LocalPlayer.Data.Level.Value >= 350 and
                             _G.Auto_Dungeon_Superhuman == nil and
                             _G.BuyAll
                      then
@@ -3049,7 +3049,7 @@ if _G.PMT_Key == "PMTKAITUN" then
                         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("LegendarySwordDealer", af)
                     end
                     if
-                        _G.WINDYKAITUN and W2 and game:GetService("Players").LocalPlayer.Data.Beli.Value >= 1000000 and
+                        _G.PMTKAITUN and W2 and game:GetService("Players").LocalPlayer.Data.Beli.Value >= 1000000 and
                             _G.Settings["Auto Buy 3 Legendary Sword"]
                      then
                         luahubbecomingtop = {1, 2, 3}
@@ -3061,7 +3061,7 @@ if _G.PMT_Key == "PMTKAITUN" then
                         wait()
                     end
                     if
-                        _G.WINDYKAITUN and game:GetService("Players")["Localplayer"].Data.Fragments.Value >= 2500 and
+                        _G.PMTKAITUN and game:GetService("Players")["Localplayer"].Data.Fragments.Value >= 2500 and
                             _G.Settings["Auto Buy Legendary Haki"]
                      then
                         luahubisbest = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
@@ -3097,7 +3097,7 @@ if _G.PMT_Key == "PMTKAITUN" then
         spawn(
             function()
                 while wait() do
-                    if _G.WINDYKAITUN then
+                    if _G.PMTKAITUN then
                         getgenv().rejoin =
                             game:GetService("CoreGui").RobloxPromptGui.promptOverlay.ChildAdded:Connect(
                             function(ag)
@@ -3118,7 +3118,7 @@ if _G.PMT_Key == "PMTKAITUN" then
                 while wait() do
                     pcall(
                         function()
-                            if _G.WINDYKAITUN and _G.Auto_New_World and W1 then
+                            if _G.PMTKAITUN and _G.Auto_New_World and W1 then
                                 if game.Players.LocalPlayer.Data.Level.Value >= 700 then
                                     _G.StartFarm = false
                                     T.Text = "Going To Second Sea"
@@ -3276,7 +3276,7 @@ if _G.PMT_Key == "PMTKAITUN" then
                     local a7 = game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest
                     pcall(
                         function()
-                            if _G.WINDYKAITUN and _G.Auto_Bartilo_Quest and MyLevel >= 850 then
+                            if _G.PMTKAITUN and _G.Auto_Bartilo_Quest and MyLevel >= 850 then
                                 if
                                     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(
                                         "BartiloQuestProgress",
@@ -3550,7 +3550,7 @@ if _G.PMT_Key == "PMTKAITUN" then
                     function()
                         local MyLevel = game.Players.LocalPlayer.Data.Level.Value
                         while wait() do
-                            if _G.WINDYKAITUN and _G.AutoRengoku and Check_Sword("Rengoku") == nil then
+                            if _G.PMTKAITUN and _G.AutoRengoku and Check_Sword("Rengoku") == nil then
                                 if MyLevel >= 958 then
                                     _G.StartFarm = false
                                     _G.Grab_Fruit = false
@@ -3608,9 +3608,9 @@ if _G.PMT_Key == "PMTKAITUN" then
                                         end
                                     end
                                 end
-                            elseif _G.WINDYKAITUN and _G.AutoRengoku and Check_Sword("Rengoku") == true then
+                            elseif _G.PMTKAITUN and _G.AutoRengoku and Check_Sword("Rengoku") == true then
                                 _G.AutoRengoku = false
-                                _G.WINDYKAITUN = true
+                                _G.PMTKAITUN = true
                             end
                         end
                     end
@@ -3742,7 +3742,7 @@ if _G.PMT_Key == "PMTKAITUN" then
             function()
                 while task.wait() do
                     if
-                        _G.WINDYKAITUN and _G.Start_Pole and game.Players.LocalPlayer.Data.Level.Value >= 20 and
+                        _G.PMTKAITUN and _G.Start_Pole and game.Players.LocalPlayer.Data.Level.Value >= 20 and
                             Check_Sword("Pole") == nil
                      then
                         pcall(
@@ -5337,7 +5337,7 @@ if _G.PMT_Key == "PMTKAITUN" then
                 while task.wait() do
                     pcall(
                         function()
-                            if _G.WINDYKAITUN and _G.Bring_Mob then
+                            if _G.PMTKAITUN and _G.Bring_Mob then
                                 for f, g in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
                                     if
                                         g.Name == i()[3] and
@@ -5371,7 +5371,7 @@ if _G.PMT_Key == "PMTKAITUN" then
                 while task.wait() do
                     pcall(
                         function()
-                            if _G.WINDYKAITUN and _G.Bring_Mob and BringMobFarm55 then
+                            if _G.PMTKAITUN and _G.Bring_Mob and BringMobFarm55 then
                                 for f, g in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
                                     if
                                         g.Name == "Shanda" and
@@ -5404,7 +5404,7 @@ if _G.PMT_Key == "PMTKAITUN" then
                 while task.wait() do
                     pcall(
                         function()
-                            if _G.WINDYKAITUN and _G.Bring_Mob or BringMobFarm556 then
+                            if _G.PMTKAITUN and _G.Bring_Mob or BringMobFarm556 then
                                 for f, g in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
                                     if
                                         (g.Name == "Snow Lurker" or g.Name == "Arctic Warrior") and
@@ -5437,7 +5437,7 @@ if _G.PMT_Key == "PMTKAITUN" then
                 while wait() do
                     pcall(
                         function()
-                            if _G.WINDYKAITUN and _G.Bring_Mob and BringMobFarm565 then
+                            if _G.PMTKAITUN and _G.Bring_Mob and BringMobFarm565 then
                                 for f, g in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
                                     if
                                         (g.Name == "Ship Deckhand" or g.Name == "Ship Engineer" or
@@ -5496,7 +5496,7 @@ if _G.PMT_Key == "PMTKAITUN" then
         spawn(
             function()
                 while wait() do
-                    if _G.WINDYKAITUN then
+                    if _G.PMTKAITUN then
                         pcall(
                             function()
                                 local args = {[1] = "AddPoint", [2] = "Melee", [3] = 3}
