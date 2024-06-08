@@ -1,4 +1,3 @@
-
 function GetUi() 
     if getgenv().Tvk then
     if game.CoreGui:FindFirstChild("SeaUI") then
