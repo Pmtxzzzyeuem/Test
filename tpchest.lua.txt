@@ -1,5 +1,5 @@
 getgenv().Setting = {
-    ["Team"] = "Marines", --Marines,Pirates
+    ["Team"] = "Pirates", --Marines,Pirates
     ["Webhook"] = {
         ["Enabled"] = false,
         ["Url Webhook"] = "", --Your Url
