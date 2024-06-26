@@ -127,9 +127,8 @@ repeat wait()
         game:GetService("TeleportService"):Teleport(game.PlaceId, game.Players.LocalPlayer)
     end
 until game:GetService("Players").LocalPlayer:FindFirstChild("WeaponAssetCache")
-if not  loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/sakjdlasd.lua", true))()  then 
-    game.Players.LocalPlayer:Kick("not Support bye")
-    return 
+if not  loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/sakjdlasd.lua", true))()  then
+   return 
 end
 if not getgenv().Setting["Misc"] then
     game.Players.LocalPlayer:Kick("Join Server, Get new config")
